@@ -1,0 +1,17 @@
+{
+    "name": "audience",
+    "description": "受众词",
+    "version": "1.0.0",
+    "terms": [
+      { "term": "学生党", "canonical": "学生党", "weight": 1.2, "match": "contains" },
+      { "term": "女大", "canonical": "女大", "weight": 1.1, "match": "contains" },
+      { "term": "初入职场", "canonical": "初入职场", "synonyms": ["白领"], "weight": 1.0, "match": "contains" },
+      { "term": "熬夜党", "canonical": "熬夜党", "weight": 1.1, "match": "contains" },
+      { "term": "敏感肌", "canonical": "敏感肌人群", "synonyms": ["安全党"], "weight": 1.1, "match": "contains" },
+      { "term": "男士护肤", "canonical": "男性人群", "synonyms": ["男生护肤", "直男护肤"], "match": "contains" },
+      { "term": "熟龄", "canonical": "熟龄人群", "synonyms": ["熟龄肌", "40+", "抗老党"], "match": "contains" },
+      { "term": "敏感肌", "canonical": "敏感人群", "synonyms": ["敏皮", "安全党"], "match": "contains" },
+      { "term": "成分党", "canonical": "圈层-成分党", "match": "contains" },
+      { "term": "功效党", "canonical": "圈层-功效党", "match": "contains" }
+    ]
+  }

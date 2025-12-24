@@ -1,0 +1,12 @@
+{
+    "name": "skin_type",
+    "description": "肤质词",
+    "version": "1.0.0",
+    "terms": [
+      { "term": "混油", "canonical": "混油", "synonyms": ["混合偏油", "混油皮"], "match": "contains" },
+      { "term": "油敏", "canonical": "油敏", "synonyms": ["油皮敏感肌"], "match": "contains" },
+      { "term": "干敏", "canonical": "干敏", "synonyms": ["干皮敏感肌"], "match": "contains" },
+      { "term": "敏感肌", "canonical": "敏感肌", "synonyms": ["敏皮", "屏障薄"], "match": "contains" }
+    ]
+  }
+  

@@ -1,0 +1,21 @@
+{
+    "name": "budget",
+    "description": "预算词",
+    "version": "1.0.0",
+    "terms": [
+      { "term": "平价", "canonical": "平价", "weight": 1.2, "match": "contains" },
+      { "term": "性价比", "canonical": "性价比", "weight": 1.2, "match": "contains" },
+      { "term": "百元内", "canonical": "百元内", "synonyms": ["100以内", "100元以内"], "weight": 1.2, "match": "contains" },
+      { "term": "120元以内", "canonical": "120以内", "synonyms": ["120以内", "120内"], "weight": 1.2, "match": "contains" },
+      { "term": "克单价", "canonical": "单价敏感", "synonyms": ["毫升价", "ml单价"], "weight": 1.1, "match": "contains" },
+      { "term": "消费降级", "canonical": "预算收紧", "match": "contains" },
+      { "term": "不想为溢价买单", "canonical": "预算收紧", "synonyms": ["品牌溢价不值", "溢价太高"], "match": "contains" },
+      { "term": "先买小样", "canonical": "试错成本控制", "synonyms": ["先试用", "先试试"], "match": "contains" },
+      { "term": "等活动", "canonical": "促销策略", "synonyms": ["等大促", "等618", "等双11"], "match": "contains" }
+    ],
+    "price_patterns": [
+      { "name": "range", "regex": "(\\d+)\\s*[-~到至]\\s*(\\d+)\\s*(元|rmb)" },
+      { "name": "ceiling", "regex": "(\\d+)\\s*(元)?\\s*(以内|以下|内)" }
+    ]
+  }
+  

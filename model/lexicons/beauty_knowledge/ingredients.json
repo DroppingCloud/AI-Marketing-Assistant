@@ -1,0 +1,19 @@
+{
+    "name": "ingredients",
+    "description": "成分词",
+    "version": "1.0.0",
+    "terms": [
+      { "term": "烟酰胺", "canonical": "niacinamide", "synonyms": ["Niacinamide"], "match": "contains" },
+      { "term": "玻尿酸", "canonical": "hyaluronic_acid", "synonyms": ["透明质酸", "HA", "Hyaluronic Acid"], "match": "contains" },
+      { "term": "神经酰胺", "canonical": "ceramide", "synonyms": ["Ceramide"], "match": "contains" },
+      { "term": "B5", "canonical": "panthenol", "synonyms": ["泛醇", "Panthenol"], "match": "contains" },
+      { "term": "重组胶原蛋白", "canonical": "recombinant_collagen", "synonyms": ["胶原蛋白", "胶原"], "match": "contains" },
+      { "term": "多肽", "canonical": "peptides", "synonyms": ["胜肽"], "match": "contains" },
+      { "term": "依克多因", "canonical": "ectoine", "synonyms": ["Ectoine"], "match": "contains" },
+      { "term": "壬二酸", "canonical": "azelaic_acid", "synonyms": ["Azelaic Acid"], "match": "contains" },
+      { "term": "水杨酸", "canonical": "salicylic_acid", "synonyms": ["BHA", "Salicylic Acid"], "match": "contains" },
+      { "term": "果酸", "canonical": "aha", "synonyms": ["AHA"], "match": "contains" },
+      { "term": "PDRN", "canonical": "pdrn", "synonyms": ["PDRN核酸", "DNA修护"], "match": "contains" }
+    ]
+  }
+  

@@ -1,0 +1,9 @@
+{
+    "name": "imperative_patterns",
+    "description": "号召词",
+    "version": "1.0.0",
+    "patterns": [
+      { "name": "cta", "regex": "(快冲|闭眼入|一定要|别买|建议避雷|直接抄|照着买|求你们去试)" }
+    ]
+  }
+  

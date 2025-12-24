@@ -1,0 +1,12 @@
+{
+    "name": "scenario",
+    "description": "场景词",
+    "version": "1.0.0",
+    "terms": [
+      { "term": "冬季", "canonical": "冬季", "match": "contains" },
+      { "term": "室温10", "canonical": "低温场景", "synonyms": ["10℃", "十度"], "match": "contains" },
+      { "term": "北方", "canonical": "北方", "match": "contains" },
+      { "term": "上妆前", "canonical": "上妆前", "match": "contains" }
+    ]
+  }
+  

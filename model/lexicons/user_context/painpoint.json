@@ -1,0 +1,18 @@
+{
+    "name": "painpoint",
+    "description": "痛点词",
+    "version": "1.0.0",
+    "terms": [
+      { "term": "闷闭口", "canonical": "闷闭口", "synonyms": ["闷痘", "长闭口"], "weight": 1.4, "match": "contains" },
+      { "term": "搓泥", "canonical": "搓泥", "weight": 1.3, "match": "contains" },
+      { "term": "致痘", "canonical": "致痘", "synonyms": ["爆痘", "长痘"], "weight": 1.3, "match": "contains" },
+      { "term": "反黑", "canonical": "反黑", "weight": 1.3, "match": "contains" },
+  
+      { "term": "糊眼", "canonical": "糊眼", "synonyms": ["辣眼", "眼睛睁不开"], "weight": 1.4, "match": "contains" },
+      { "term": "卸不干净", "canonical": "卸不干净", "synonyms": ["粉底残留", "残留"], "weight": 1.3, "match": "contains" },
+      { "term": "乳化失败", "canonical": "乳化失败", "synonyms": ["乳化不起来"], "weight": 1.2, "match": "contains" },
+      { "term": "油膜", "canonical": "油膜", "synonyms": ["白膜"], "weight": 1.1, "match": "contains" },
+      { "term": "结冰", "canonical": "结冰", "synonyms": ["冻住", "冻成猪油"], "weight": 1.2, "match": "contains" }
+    ]
+  }
+  

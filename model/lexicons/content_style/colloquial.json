@@ -1,0 +1,12 @@
+{
+    "name": "colloquial_words",
+    "description": "口语词",
+    "version": "1.0.0",
+    "terms": [
+      { "term": "真的", "canonical": "真的", "match": "contains" },
+      { "term": "有点", "canonical": "有点", "synonyms": ["有一丢丢"], "match": "contains" },
+      { "term": "太", "canonical": "太", "synonyms": ["巨", "超级"], "match": "contains" },
+      { "term": "就是说", "canonical": "就是说", "synonyms": ["就离谱"], "match": "contains" }
+    ]
+  }
+  

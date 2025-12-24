@@ -1,0 +1,17 @@
+{
+    "name": "efficacy",
+    "description": "功效词",
+    "version": "1.0.0",
+    "terms": [
+      { "term": "保湿", "canonical": "保湿", "match": "contains" },
+      { "term": "修护", "canonical": "修护", "synonyms": ["屏障修护", "维稳"], "match": "contains" },
+      { "term": "控油", "canonical": "控油", "match": "contains" },
+      { "term": "温和", "canonical": "温和", "synonyms": ["不刺激"], "match": "contains" },
+      { "term": "清洁力", "canonical": "清洁力", "synonyms": ["卸得干净"], "match": "contains" },
+      { "term": "复合功效", "canonical": "复合功效", "synonyms": ["一瓶多用", "多效合一"], "match": "contains" },
+      { "term": "持久", "canonical": "效果持久", "synonyms": ["持久在线", "一整天", "全天"], "match": "contains" },
+      { "term": "维稳", "canonical": "修护", "synonyms": ["稳定皮肤状态", "稳住", "不反复"], "match": "contains" },
+      { "term": "抗初老", "canonical": "抗老", "synonyms": ["初老", "抗衰"], "match": "contains" }
+    ]
+  }
+  
