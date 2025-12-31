@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 
 KEEP_COLUMNS = [
     'note_id', 'title', 'desc', 'tags', 'publish_time', 
-    'cover_path', 'liked_count', 'hot_level', 'comments_sample'
+    'cover_path', 'hot_level', 'comments_sample'
 ]
 
 class HotLevelLabeler:
@@ -22,22 +22,21 @@ class HotLevelLabeler:
     
     功能：
     1. 消除时间积累效应，计算 EVI 速率（Engagement Velocity Index）
-    2. 基于分组（账号/关键词）进行相对评级
-    3. 生成 S/A/B/C/D 五级爆款标签
     
     使用方法：
     >>> labeler = HotLevelLabeler()
     >>> df_labeled = labeler.fit_transform(df)
     """
     
-    def __init__(self, evi_weights=None,time_smoothing_hours=2.0,platform_default='xhs'):
+    def __init__(self, evi_weights=None,time_smoothing_hours=2.0,control_factor=0.5,platform_default='xhs'):
         self.evi_weights = evi_weights or {
-            'comment': 3.0, 
-            'save': 5.0, 
-            'share': 10.0, 
+            'comment': 7.0, 
+            'collect': 5.0, 
+            'share': 3.0, 
             'like': 1.0
         }
         self.time_smoothing_hours = time_smoothing_hours    # 时间平滑因子（小时），防止短时爆发数值过大，默认 2.0
+        self.control_factor = control_factor                # 控制因子，防止 EVI 速率过大，默认 0.5
         self.platform_default = platform_default            # 默认平台名称，当数据中缺失 platform 字段时使用，默认 'xhs'
         
         self.group_stats_ = None                            # 存储分组统计信息（供调试和分析使用）
@@ -53,10 +52,10 @@ class HotLevelLabeler:
         for col in metric_cols:
             df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
         
-        # 计算加权 EVI
+        # 加权计算原始 EVI
         df['raw_EVI'] = (
             df['comment_count'] * self.evi_weights['comment'] +
-            df['collected_count'] * self.evi_weights['save'] +
+            df['collected_count'] * self.evi_weights['collect'] +
             df['share_count'] * self.evi_weights['share'] +
             df['liked_count'] * self.evi_weights['like']
         )
@@ -65,104 +64,89 @@ class HotLevelLabeler:
     
     def _calculate_velocity(self, df):
         """
-        消除时间积累效应，计算 EVI 速率
+        消除时间积累效应，计算 EVI rate
         """
         
         # 解析时间字段
         df['publish_time'] = pd.to_datetime(df['publish_time'], errors='coerce')
         df['crawl_time'] = pd.to_datetime(df['crawl_time'], errors='coerce')
         
-        # 确定基准时间（可选：使用当前时间或最小爬取时间）
-        # 对于历史数据，使用最小爬取时间 + 1小时作为统一参考点
+        # 确定基准时间：最小爬取时间 + 1小时
         reference_time = df['crawl_time'].min() + timedelta(hours=1)
         
         # 计算发布时长（小时）
         df['hours_diff'] = (reference_time - df['publish_time']).dt.total_seconds() / 3600
         
-        # 处理异常时间（防止负数）
+        # 处理异常时间：防止负数
         df['hours_diff'] = df['hours_diff'].apply(lambda x: max(0, x))
         
-        # 计算 EVI 速率 = EVI / (时长 + 平滑因子)
-        df['EVI_velocity'] = df['raw_EVI'] / (df['hours_diff'] + self.time_smoothing_hours)
+        # 时间校正：消除时间积累效应
+        df['EVI_rate'] = df['raw_EVI'] / (df['hours_diff'] + self.time_smoothing_hours) ** self.control_factor
         
         return df
     
-    def _generate_group_key(self, row):
-        """
-        生成分组键，用于分组归一化
+    # def _generate_group_key(self, row):
+    #     """
+    #     生成分组键，用于分组归一化
         
-        分组逻辑：
-        - 账号来源：platform_user_用户ID
-        - 关键词来源：platform_kw_搜索词
-        """
-        src = str(row.get('src', '')).lower()
-        platform = str(row.get('platform', self.platform_default)).lower()
+    #     分组逻辑：
+    #     - 账号来源：platform_user_用户ID
+    #     - 关键词来源：platform_kw_搜索词
+    #     """
+    #     src = str(row.get('src', '')).lower()
+    #     platform = str(row.get('platform', self.platform_default)).lower()
         
-        if 'account' in src or '账号' in src:
-            user_id = str(row.get('user_id', 'unknown')).lower()
-            return f"{platform}_user_{user_id}"
-        else:
-            keyword = str(row.get('search_keyword', 'unknown')).lower()
-            return f"{platform}_kw_{keyword}"
+    #     if 'account' in src or '账号' in src:
+    #         user_id = str(row.get('user_id', 'unknown')).lower()
+    #         return f"{platform}_user_{user_id}"
+    #     else:
+    #         keyword = str(row.get('search_keyword', 'unknown')).lower()
+    #         return f"{platform}_kw_{keyword}"
     
-    def _calculate_group_thresholds(self, df):
-        """
-        基于分组计算分位数阈值
-        """
+    # def _calculate_group_thresholds(self, df):
+    #     """
+    #     基于分组计算分位数阈值
+    #     """
         
-        # 生成分组键
-        df['group_key'] = df.apply(self._generate_group_key, axis=1)
+    #     # 生成分组键
+    #     df['group_key'] = df.apply(self._generate_group_key, axis=1)
         
-        # 计算各组的分位数（50%, 80%, 90%, 95%）
-        group_stats = df.groupby('group_key')['EVI_velocity'].quantile([0.5, 0.8, 0.90, 0.95]).unstack()
-        group_stats.columns = ['t50', 't80', 't90', 't95']
+    #     # 计算各组的分位数（50%, 80%, 90%, 95%）
+    #     group_stats = df.groupby('group_key')['EVI_velocity'].quantile([0.5, 0.8, 0.90, 0.95]).unstack()
+    #     group_stats.columns = ['t50', 't80', 't90', 't95']
         
-        # 保存统计信息
-        self.group_stats_ = group_stats
+    #     # 保存统计信息
+    #     self.group_stats_ = group_stats
         
-        # 合并阈值到原数据
-        df = df.merge(group_stats, on='group_key', how='left')
+    #     # 合并阈值到原数据
+    #     df = df.merge(group_stats, on='group_key', how='left')
         
-        return df
+    #     return df
     
-    def _get_grade(self, row):
-        """
-        根据 EVI 速率和分组阈值进行评级
+    # def _get_grade(self, row):
+    #     """
+    #     根据 EVI 速率和分组阈值进行评级
         
-        评级规则：
-        - S: > 95th percentile (Top 5%)
-        - A: > 90th percentile (Top 10%)
-        - B: > 80th percentile (Top 20%)
-        - C: > 50th percentile (Top 50%)
-        - D: <= 50th percentile (Bottom 50%)
-        """
-        score = row['EVI_velocity']
+    #     评级规则：
+    #     - S: > 95th percentile (Top 5%)
+    #     - A: > 90th percentile (Top 10%)
+    #     - B: > 80th percentile (Top 20%)
+    #     - C: > 50th percentile (Top 50%)
+    #     - D: <= 50th percentile (Bottom 50%)
+    #     """
+    #     score = row['EVI_velocity']
         
-        if score > row['t95']: return 'S'
-        elif score > row['t90']: return 'A'
-        elif score > row['t80']: return 'B'
-        elif score > row['t50']: return 'C'
-        else: return 'D'
+    #     if score > row['t95']: return 'S'
+    #     elif score > row['t90']: return 'A'
+    #     elif score > row['t80']: return 'B'
+    #     elif score > row['t50']: return 'C'
+    #     else: return 'D'
     
     def fit_transform(self, df):
         """
-        主处理流程：对输入数据进行爆款标签生成
-        
-        参数:
-            df (pd.DataFrame): 输入数据，需包含以下字段：
-                - comment_count, collected_count, share_count, liked_count
-                - publish_time, crawl_time
-                - src, search_keyword (可选: platform, user_id)
-        
-        返回:
-            pd.DataFrame: 带有爆款标签的数据，新增字段：
-                - raw_EVI: 原始互动价值
-                - hours_diff: 发布时长（小时）
-                - EVI_velocity: EVI 速率
-                - group_key: 分组键
-                - t50, t80, t90, t95: 分组阈值
-                - hot_level: 爆款等级 (S/A/B/C/D)
+        计算 EVI rate 热度指标
         """
+
         df = df.copy()
         
         # 1. 计算原始 EVI
@@ -171,21 +155,21 @@ class HotLevelLabeler:
         # 2. 计算 EVI 速率（消除时间影响）
         df = self._calculate_velocity(df)
         
-        # 3. 计算分组阈值
-        df = self._calculate_group_thresholds(df)
+        # # 3. 计算分组阈值
+        # df = self._calculate_group_thresholds(df)
         
-        # 4. 生成爆款标签
-        df['hot_level'] = df.apply(self._get_grade, axis=1)
+        # # 4. 生成爆款标签
+        # df['hot_level'] = df.apply(self._get_grade, axis=1)
         
         return df
     
-    def get_group_stats(self):
-        """
-        获取分组统计信息（需先调用 fit_transform）
-        """
-        if self.group_stats_ is None:
-            raise ValueError("请先调用 fit_transform() 方法生成标签")
-        return self.group_stats_
+    # def get_group_stats(self):
+    #     """
+    #     获取分组统计信息（需先调用 fit_transform）
+    #     """
+    #     if self.group_stats_ is None:
+    #         raise ValueError("请先调用 fit_transform() 方法生成标签")
+    #     return self.group_stats_
 
 class DataCleaner:
     """
@@ -220,11 +204,35 @@ class DataCleaner:
         # 如果文本为空，返回空列表
         if pd.isna(tag_str):
             return []
+        
+        tag_str = str(tag_str).strip()
+        
+        # 检测是否是过度转义的情况（包含多层引号和反斜杠）
+        if tag_str.startswith("['[") or '\\\\\\' in tag_str:
+            # 尝试提取话题标签
+            import re
+            # 匹配 #标签[话题]# 或 #标签# 格式
+            topic_pattern = r'#([^#\[\]]+?)(?:\[话题\])?#'
+            matches = re.findall(topic_pattern, tag_str)
+            if matches:
+                return [m.strip() for m in matches if m.strip()]
+            # 如果没找到话题标签，返回空列表
+            return []
+        
+        # 正常情况：处理中文逗号，按逗号分割为列表，去除空格
+        tags = [t.strip() for t in tag_str.replace('，', ',').split(',') if t.strip()]
+        
+        # 清理话题标记
+        cleaned_tags = []
+        for tag in tags:
+            # 去除 # 和 [话题] 标记
+            tag = tag.replace('#', '').replace('[话题]', '').strip()
+            if tag:
+                cleaned_tags.append(tag)
+        
+        return cleaned_tags
 
-        # 处理中文逗号，按逗号分割为列表，去除空格
-        return [t.strip() for t in tag_str.replace('，', ',').split(',') if t.strip()]
-
-    def process(self):
+    def process(self, generator_open: bool = False):
         """执行提纯主流程"""
 
         # 基础文本清洗 (Title & Desc)
@@ -246,9 +254,15 @@ class DataCleaner:
         print("[PROCESS] 正在处理时间字段...")
         self.df['publish_time'] = pd.to_datetime(self.df['publish_time'], errors='coerce')
 
-        # 构建爆款标签 (Hot Level Label Construction)
-        print("[PROCESS] 正在构建爆款等级 (Hot Level)...")
-        self.df['hot_level'] = HotLevelLabeler().fit_transform(self.df)['hot_level']
+        # # 构建爆款标签 (Hot Level Label Construction)
+        # if generator_open:
+        #     print("[PROCESS] 正在构建爆款等级 (Hot Level)...")
+        #     self.df['hot_level'] = HotLevelLabeler().fit_transform(self.df)['hot_level']
+        # else:
+        #     if 'hot_level' in self.df.columns:
+        #         self.df = self.df.drop(columns=['hot_level'])
+
+        self.df = HotLevelLabeler().fit_transform(self.df)
 
         # 图像路径标准化
         self.df["cover_path"] = self.df["cover_path"].apply(lambda x: "" if pd.isna(x) or str(x).strip().lower() == "nan" else str(x).strip())
@@ -256,12 +270,17 @@ class DataCleaner:
         self.df = self.df[self.df["cover_path"].apply(lambda p: os.path.exists(p))].reset_index(drop=True)     # 去除图片路径不存在的数据
 
         # 数据列筛选与重命名
-        self.df['tags'] = self.df['tags_list']
-        final_columns = [c for c in KEEP_COLUMNS if c in self.df.columns]
+        # 将 tags_list (列表) 转换为干净的字符串格式，避免多重转义
+        self.df['tags'] = self.df['tags_list'].apply(
+            lambda x: ', '.join(x) if isinstance(x, list) and len(x) > 0 else ""
+        )
+        if generator_open:
+            final_columns = [c for c in KEEP_COLUMNS if c in self.df.columns]
+        else:
+            final_columns = self.df.columns.tolist()
 
         self.df = self.df[final_columns]
 
-        assert self.df["hot_level"].notna().all(), "hot_level 存在缺失"
         assert self.df["cover_path"].map(type).eq(str).all(), "cover_path 存在非字符串"
         
         print("[INFO] 数据清洗完成!")
@@ -285,19 +304,24 @@ class DataCleaner:
 # --- 执行入口 ---
 if __name__ == "__main__":
     # 读取数据
-    raw_csv_data = './data/clean_20251223_202051.csv'
+    raw_csv_data = './data/output_annotated.csv'
 
     # 实例化并运行 pipeline
-    cleaner = DataCleaner(raw_csv_data)          # 数据提纯器实例化
-    cleaner.load_data()                          # 加载数据
-    cleaner.process()                            # 数据提纯
-    cleaner.show_statistics()                    # 打印数据分布，检查类别平衡性
+    generator_open = False
+    cleaner = DataCleaner(raw_csv_data)                     # 数据提纯器实例化
+    cleaner.load_data()                                     # 加载数据
+    cleaner.process(generator_open=generator_open)          # 数据提纯
+    if generator_open:
+        print("[INFO] 爆款等级生成器开启，进行数据分布检查")
+        # cleaner.show_statistics()                    # 打印数据分布，检查类别平衡性
+    else:
+        print("[INFO] 爆款等级生成器关闭，不进行数据分布检查")
 
     # 获取最终 DataFrame
     cleaned_df = cleaner.get_cleaned_data()     # 提纯后的数据
 
     # 保存数据
-    output_file = './data/data_with_label'
+    output_file = './data/output_annotated'
 
     cleaned_df.to_csv(f'{output_file}.csv', index=False)
     cleaned_df.to_excel(f'{output_file}.xlsx', index=False)

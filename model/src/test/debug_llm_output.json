@@ -1,0 +1,80 @@
+{
+  "note_id": "68f8423f0000000005002cb4",
+  "llm_output": {
+    "note_id": "68f8423f0000000005002cb4",
+    "schema_version": "mkctx_v2.0",
+    "language": "中文",
+    "b_brand_tier": "大众",
+    "b_brand_origin": "国货",
+    "b_product_stage": "常青款",
+    "b_primary_category": "护肤",
+    "b_campaign_goal": [
+      "提升互动/种草",
+      "促进成交"
+    ],
+    "b_benchmarking": {
+      "has_benchmark": false,
+      "benchmark_type": "无"
+    },
+    "c_need_archetype": "皮肤问题解决型",
+    "c_efficacy_goal": [
+      "控油祛痘",
+      "修护",
+      "保湿"
+    ],
+    "c_lifecycle": [
+      "职场"
+    ],
+    "c_skin_type": [
+      "油皮",
+      "敏感肌"
+    ],
+    "c_skin_concerns": [
+      "痘痘",
+      "闭口",
+      "毛孔",
+      "泛红"
+    ],
+    "c_budget_band": "100~300",
+    "c_region_climate": "未知",
+    "c_channel_behavior": [
+      "搜索导向",
+      "收藏对比"
+    ],
+    "scene_marketing_nodes": [
+      "未知"
+    ],
+    "scene_season": "夏",
+    "scene_climate": [
+      "闷热",
+      "换季"
+    ],
+    "confidence": {
+      "overall": 0.85,
+      "fields_low_confidence": [
+        "c_region_climate"
+      ]
+    },
+    "evidence": {
+      "text_snippets": [
+        "男生油痘肌➕毛孔粗大自救！",
+        "以前我这脸一到下午就油光满面，鼻翼毛孔粗得能塞芝麻，还时不时冒几颗红肿痘",
+        "换成氨基酸洁面，早晚各一次，温和把油脂和污垢带走",
+        "含烟酰胺+水杨酸的，烟酰胺控油提亮，水杨酸温和疏通毛孔",
+        "乳液选清爽的神经酰胺款，修护皮肤屏障",
+        "敏感肌可以先局部试试建立耐受",
+        "少熬夜多运动，内调也重要",
+        "饮食上少吃高糖油炸，多吃蔬菜水果和蛋白质"
+      ],
+      "used_fields": [
+        "title",
+        "desc",
+        "tags",
+        "search_keyword",
+        "comments_sample"
+      ]
+    }
+  },
+  "extra_fields": [],
+  "missing_fields": []
+}

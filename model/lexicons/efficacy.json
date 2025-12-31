@@ -1,0 +1,2229 @@
+{
+  "schema_version": "lexicon.v1",
+  "lexicon_id": "efficacy",
+  "title": "功效词库",
+  "source": "功效词库.docx",
+  "generated_at": "2025-12-30",
+  "term_count": 279,
+  "terms": [
+    {
+      "term": "减轻外界刺激引起的过敏反应",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "口罩下也能保持妆容完整",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "抵御紫外线造成的松弛",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善动态纹（如抬头纹",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "增强皮肤自身保湿力",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "射频等技术提拉肌肤",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L3"
+      ]
+    },
+    {
+      "term": "长时间保持口气清新",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "防止肤色因氧化变暗",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "延长头皮清爽时间",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "让皮肤看起来平滑",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "从根源减少出油",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "帮助护肤品吸收",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L3"
+      ]
+    },
+    {
+      "term": "微生态屏障修护",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L2"
+      ]
+    },
+    {
+      "term": "视觉上缩小毛孔",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "24小时保湿",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "促进新发生长",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "促进胶原蛋白",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L2"
+      ]
+    },
+    {
+      "term": "修护烫染损伤",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "减少反复长痘",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "减少水分流失",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "减少油脂分泌",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "刷酸后灼热感",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "卸除防水彩妆",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "快速溶解彩妆",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "抑制口腔异味",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "抚平唇部干纹",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善关节暗沉",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善外油内干",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善毛周角化",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善泛红刺痛",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "无需反复擦拭",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "毛细血管扩张",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "淡化已有痘印",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "物理屏障修护",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L2"
+      ]
+    },
+    {
+      "term": "缓解牙齿敏感",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "缓解身体干燥",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "调节皮肤菌群",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "适合户外运动",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "长时间不脱妆",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "防止晒黑晒老",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "防止水分蒸发",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "防止肌肤糖化",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "阻断色斑形成",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "PH值平衡",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "下颌线清晰",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "从源头美白",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "代谢黑色素",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L2"
+      ]
+    },
+    {
+      "term": "保湿不拔干",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "修复皮脂膜",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "全波段防护",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L2"
+      ]
+    },
+    {
+      "term": "全肤质适用",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "唇纹消失术",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L2"
+      ]
+    },
+    {
+      "term": "增厚角质层",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "增强耐受力",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "抑制表情纹",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L2"
+      ]
+    },
+    {
+      "term": "抑制黑色素",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L2"
+      ]
+    },
+    {
+      "term": "抵御自由基",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善红血丝",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "敏感肌可用",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "温和不刺激",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "游泳不脱落",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "皮肤喝饱水",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "维持水润感",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "让头发顺滑",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "让牙齿更白",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "让肌肤饱满",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "轻薄不闷痘",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "通过微电流",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L3"
+      ]
+    },
+    {
+      "term": "降低敏感度",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "V脸效果",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "不伤屏障",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "不沾口罩",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L2"
+      ]
+    },
+    {
+      "term": "丰盈肌肤",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "亮白笑容",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "促渗吸收",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L2"
+      ]
+    },
+    {
+      "term": "保持清爽",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "修复屏障",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L2"
+      ]
+    },
+    {
+      "term": "修护损伤",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L2"
+      ]
+    },
+    {
+      "term": "儿童可用",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "全身美白",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "净化肌肤",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L3"
+      ]
+    },
+    {
+      "term": "减少掉发",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "减少黑头",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L3"
+      ]
+    },
+    {
+      "term": "加速代谢",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "即时补水",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L2"
+      ]
+    },
+    {
+      "term": "即时镇静",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L2"
+      ]
+    },
+    {
+      "term": "卸妆力强",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L2"
+      ]
+    },
+    {
+      "term": "去除头屑",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "去除油光",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "去除牙渍",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "去黑眼圈",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "口腔护理",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "吸附油脂",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "哑光妆效",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "均匀肤色",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "城市污染",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "增加弹性",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "妆感自然",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "妈生好皮",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L2"
+      ]
+    },
+    {
+      "term": "孕妇可用",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "宛若天生",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "导入营养",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L3"
+      ]
+    },
+    {
+      "term": "导出污垢",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L3"
+      ]
+    },
+    {
+      "term": "工具仪器",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "平滑肌肤",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "平滑肤质",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "平衡PH",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "平衡肌肤",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "延展性好",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "延长妆效",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L3"
+      ]
+    },
+    {
+      "term": "强韧发根",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "恢复强韧",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "恢复柔软",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "抗光老化",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L2"
+      ]
+    },
+    {
+      "term": "抗敏护龈",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L2"
+      ]
+    },
+    {
+      "term": "抗炎修护",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L2"
+      ]
+    },
+    {
+      "term": "持久防晒",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "持妆不脱",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L2"
+      ]
+    },
+    {
+      "term": "控油去屑",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L2"
+      ]
+    },
+    {
+      "term": "提亮暗沉",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "提亮肤色",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "提升效果",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L3"
+      ]
+    },
+    {
+      "term": "提升轮廓",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "提拉紧致",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L2"
+      ]
+    },
+    {
+      "term": "收敛毛孔",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L2"
+      ]
+    },
+    {
+      "term": "改善分叉",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善干敏",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善干纹",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善敏感",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善暗沉",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "改善松弛",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "敏肌可用",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "柔焦毛孔",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L2"
+      ]
+    },
+    {
+      "term": "柔顺光泽",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L2"
+      ]
+    },
+    {
+      "term": "淡化细纹",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "深层清洁",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L2"
+      ]
+    },
+    {
+      "term": "清新口气",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L2"
+      ]
+    },
+    {
+      "term": "清洁毛孔",
+      "synonyms": [],
+      "labels": [
+        "工具仪器",
+        "L2"
+      ]
+    },
+    {
+      "term": "清除黑头",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "温和清洁",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L2"
+      ]
+    },
+    {
+      "term": "滋润保湿",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L2"
+      ]
+    },
+    {
+      "term": "牙龈出血",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "玫瑰痤疮",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "环境损伤",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "疏通毛孔",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "痘痘炎症",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "皮肤粗糙",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "眼唇可卸",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "磨皮效果",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "紧致提拉",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L2"
+      ]
+    },
+    {
+      "term": "缓解干燥",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "缓解晒后",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "缓解紧绷",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L3"
+      ]
+    },
+    {
+      "term": "缓解红肿",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "美白牙齿",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L2"
+      ]
+    },
+    {
+      "term": "美白身体",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L2"
+      ]
+    },
+    {
+      "term": "调节水油",
+      "synonyms": [],
+      "labels": [
+        "控油",
+        "L2"
+      ]
+    },
+    {
+      "term": "身体护理",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "遮盖痘痘",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "镇定皮肤",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "长效锁水",
+      "synonyms": [],
+      "labels": [
+        "保湿",
+        "L2"
+      ]
+    },
+    {
+      "term": "防UVA",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "防光老化",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "防御蓝光",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "防止晒黑",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "防水防汗",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L2"
+      ]
+    },
+    {
+      "term": "防脱生发",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L2"
+      ]
+    },
+    {
+      "term": "隐形毛孔",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "预防变黑",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "鱼尾纹）",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "UVB",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "不假滑",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "不打结",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "不搓泥",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "不斑驳",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "不晕染",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "不暗沉",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "不沾杯",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "不浮粉",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "不紧绷",
+      "synonyms": [],
+      "labels": [
+        "清洁",
+        "L3"
+      ]
+    },
+    {
+      "term": "不结块",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "不脱色",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "不起皮",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "不转移",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "光损伤",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "去唇纹",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "去橘皮",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "去水肿",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "去角质",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "去闭口",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "去鸡皮",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L2"
+      ]
+    },
+    {
+      "term": "去黄气",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "去黑头",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "增发量",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "好推开",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "抗光损",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L2"
+      ]
+    },
+    {
+      "term": "抗刺激",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L2"
+      ]
+    },
+    {
+      "term": "抗氧化",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L2"
+      ]
+    },
+    {
+      "term": "抗污染",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "抗糖化",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L2"
+      ]
+    },
+    {
+      "term": "抗蓝光",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "易卸除",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "易梳理",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "有光泽",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "红外线",
+      "synonyms": [],
+      "labels": [
+        "防晒",
+        "L3"
+      ]
+    },
+    {
+      "term": "红血丝",
+      "synonyms": [],
+      "labels": [
+        "修护",
+        "L3"
+      ]
+    },
+    {
+      "term": "裸妆感",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "颗粒感",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "高遮瑕",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L2"
+      ]
+    },
+    {
+      "term": "黑眼圈",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "丰盈",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "促渗",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "保护",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "保湿",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "修护",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "光泽",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "再生",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "净化",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "卸妆",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "去屑",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "哑光",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "固发",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "妆效",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "定妆",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "干裂",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "平衡",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "打底",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "抑汗",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "抗敏",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "抗炎",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "抗皱",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "抗老",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "抗菌",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "护发",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "持久",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "排毒",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "控油",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "提亮",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "提升",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "提拉",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "斑点",
+      "synonyms": [],
+      "labels": [
+        "美白",
+        "L3"
+      ]
+    },
+    {
+      "term": "暖肤",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "染色",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "柔焦",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "止痒",
+      "synonyms": [],
+      "labels": [
+        "护发",
+        "L3"
+      ]
+    },
+    {
+      "term": "泛红",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "淡斑",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "清洁",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "滋养",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "滋润",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "激活",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "生发",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "瘙痒",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "皱纹",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "着色",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "祛痘",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "紧致",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "红斑",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "红肿",
+      "synonyms": [],
+      "labels": [
+        "口腔护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "纹身",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "美白",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "胎记",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "舒缓",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "色斑",
+      "synonyms": [],
+      "labels": [
+        "抗老",
+        "L3"
+      ]
+    },
+    {
+      "term": "蓬松",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "补水",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "褪红",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L2"
+      ]
+    },
+    {
+      "term": "起皮",
+      "synonyms": [],
+      "labels": [
+        "身体护理",
+        "L3"
+      ]
+    },
+    {
+      "term": "透亮",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    },
+    {
+      "term": "速干",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "重建",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "锁水",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "镇痛",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "防晒",
+      "synonyms": [],
+      "labels": [
+        "L1"
+      ]
+    },
+    {
+      "term": "防脱",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "降温",
+      "synonyms": [],
+      "labels": [
+        "舒缓",
+        "L3"
+      ]
+    },
+    {
+      "term": "隔离",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "顺滑",
+      "synonyms": [],
+      "labels": [
+        "L1",
+        "L1_list"
+      ]
+    },
+    {
+      "term": "饱满",
+      "synonyms": [],
+      "labels": [
+        "妆效",
+        "L3"
+      ]
+    }
+  ]
+}
